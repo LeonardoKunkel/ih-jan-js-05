@@ -67,3 +67,96 @@ for( let key in refresco ) {
 
 
 // ARREGLOS CON OBJETOS
+const mike = [
+    {
+        name: "Mike",
+        edad: 34
+    }
+]
+
+console.log(mike[0].edad);
+
+let estudiantesIH = [
+    {
+        name: "Leo",
+        location: "Querétaro",
+        weather: "Frijolito"
+    },
+    {
+        name: "Joaquín",
+        location: "Hidalgo",
+        weather: "Frijolito duro"
+    },
+    {
+        name: "Alan",
+        location: "Atizapán",
+        weather: "Frijolito suave"
+    },
+    {
+        name: "Alexis",
+        location: "Aguascalientes",
+        weather: "Frijolito suave"
+    }
+]
+
+console.log(estudiantesIH[2].location);
+
+// JS TRADICIONAL - ES5
+estudiantesIH.push({
+    name: "Emmanuel",
+    location: "CDMX",
+    weather: "Calorcito"
+});
+
+console.log(estudiantesIH);
+
+// JS MODERNO - ES6
+estudiantesIH = [
+    ...estudiantesIH,
+    {
+        name: "Román",
+        location: "CDMX",
+        weather: "Calorcito"
+    }
+];
+
+console.log(estudiantesIH);
+
+let arrHalo = [
+    {
+        name: "John",
+        species: "Human",
+        kills: 87634876587923465,
+        alias: [
+            "Master chief",
+            "Demon",
+            "Sierra 117"
+        ]
+    },
+    {
+        name: "Thel 'Vadam",
+        species: "Sangheili",
+        kills: 765785,
+        alias: [
+            "Arbiter",
+            "split face"
+        ]
+    },
+    {
+        name: "Miranda Keyes",
+        species: "Human",
+        kills: 3,
+        alias: "Keyes"
+    },
+    {
+        name: "Tartarus",
+        species: "Monkeys?",
+        kills: 666,
+        alias: "Space ape"
+    }
+]
+
+console.log(arrHalo[0].alias[1]);
+console.log(arrHalo[1].alias[0]);
+console.log(arrHalo[2].species);
+console.log(arrHalo[3].alias);
